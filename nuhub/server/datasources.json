@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "nuhub1": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "mongodb://admin1:admin@localhost/admin",
+    "database": "admin",
+    "password": "admin",
+    "name": "nuhub1",
+    "user": "admin1",
+    "connector": "mongodb"
+  }
+}

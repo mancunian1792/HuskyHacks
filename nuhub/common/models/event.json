@@ -1,0 +1,53 @@
+{
+  "name": "event",
+  "plural": "events",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "date"
+    },
+    "event_date": {
+      "type": "date"
+    },
+    "s3_links": {
+      "type": [
+        "string"
+      ]
+    },
+    "location": {
+      "type": "string"
+    },
+    "location_geo": {
+      "type": "geopoint"
+    },
+    "category": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "createdByUser": {
+      "type": "belongsTo",
+      "model": "nuser",
+      "foreignKey": "username"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
